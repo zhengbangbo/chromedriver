@@ -1,8 +1,4 @@
-# 忽略所有文件
-*
-
-# 需要保留的部分
-!.gitignore
-!README.md
-!download_chromedriver.sh
-
+/drivers-available/*
+!/drivers-available/README.md
+/drivers-enabled/*
+!/drivers-enabled/README.md
