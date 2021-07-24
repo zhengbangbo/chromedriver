@@ -1,0 +1,8 @@
+# 忽略所有文件
+*
+
+# 需要保留的部分
+!.gitignore
+!README.md
+!download_chromedriver.sh
+

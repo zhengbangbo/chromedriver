@@ -1,9 +1,13 @@
 # chromedriver
 
-all 文件夹是用来指定`caps["chromedriverExecutableDir"]="/Users/zhengbangbo/tools/chromedriver/all"`。
-让 appium 在处理时不要处理太多文件夹，复制一部分需要的就好。
+批量下载chromedriver
 
-version 文件里面的版本号是手动采集的。
-在https://npm.taobao.org/mirrors/chromedriver 里面鼠标拖动复制粘贴，然后使用`cat version.txt | awk -F"/" '{print $1}' > version` 创建出来。
+使用淘宝源：https://npm.taobao.org/mirrors/chromedriver
 
+## 用处
 
+Appium的[Desired Capabilities](https://appium.io/docs/en/writing-running-appium/caps/)中，仅对于基于Android的驱动，有配置选项 `chromedriverExecutableDir`。设置它后可以自动发现兼容的chromedriver。
+
+```
+caps["chromedriverExecutableDir"]="/Users/zhengbangbo/tools/chromedriver/drivers-enabled"
+```
